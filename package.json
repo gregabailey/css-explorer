@@ -1,0 +1,21 @@
+{
+  "name": "css-explorer",
+  "version": "1.0.0",
+  "description": "Interactive explorer for modern CSS features (2020-2025)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "css",
+    "demo",
+    "learning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
