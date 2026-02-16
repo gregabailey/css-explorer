@@ -30,6 +30,7 @@ export function render() {
         appearance: base-select;
         font-family: inherit;
         font-size: 0.9rem;
+        padding: 0.6rem 0.75rem;
         border: 1px solid var(--color-border);
         border-radius: var(--radius);
         background: var(--color-surface);
@@ -44,6 +45,10 @@ export function render() {
 
       .cs-select::picker-icon {
         color: var(--color-text-muted);
+        transition: rotate 0.2s ease;
+      }
+      .cs-select:open::picker-icon {
+        rotate: 180deg;
       }
 
       .cs-select::picker(select) {
@@ -76,6 +81,7 @@ export function render() {
         border-radius: 50%;
         vertical-align: middle;
         margin-right: 0.4rem;
+        flex-shrink: 0;
       }
 
       /* Fallback demo */
@@ -161,20 +167,14 @@ export function render() {
           <h3>With Color Indicators</h3>
           <div class="cs-row">
             <label>Status</label>
-            <select class="cs-select">
-              <option><span class="cs-dot" style="background:#40a02b"></span>Active</option>
-              <option><span class="cs-dot" style="background:#df8e1d"></span>Pending</option>
-              <option><span class="cs-dot" style="background:#e64553"></span>Inactive</option>
-              <option><span class="cs-dot" style="background:#8b90a5"></span>Draft</option>
+            <select class="cs-select" id="cs-status-select">
+              <button><selectedcontent></selectedcontent></button>
             </select>
           </div>
           <div class="cs-row">
             <label>Priority</label>
-            <select class="cs-select">
-              <option><span class="cs-dot" style="background:#e64553"></span>Critical</option>
-              <option><span class="cs-dot" style="background:#df8e1d"></span>High</option>
-              <option><span class="cs-dot" style="background:#04a5e5"></span>Medium</option>
-              <option><span class="cs-dot" style="background:#8b90a5"></span>Low</option>
+            <select class="cs-select" id="cs-priority-select">
+              <button><selectedcontent></selectedcontent></button>
             </select>
           </div>
         </div>
@@ -232,10 +232,49 @@ option:checked {
 
 /* Rich HTML content inside options */
 &lt;select style="appearance: base-select"&gt;
+  &lt;button&gt;
+    &lt;selectedcontent&gt;&lt;/selectedcontent&gt;
+  &lt;/button&gt;
   &lt;option&gt;
     &lt;span class="dot green"&gt;&lt;/span&gt;Active
   &lt;/option&gt;
 &lt;/select&gt;</pre>
     </div>
   `;
+}
+
+export function init() {
+  // Build color dot options via DOM APIs so the parser doesn't strip spans
+  const statusItems = [
+    { color: '#40a02b', label: 'Active' },
+    { color: '#df8e1d', label: 'Pending' },
+    { color: '#e64553', label: 'Inactive' },
+    { color: '#8b90a5', label: 'Draft' },
+  ];
+
+  const priorityItems = [
+    { color: '#e64553', label: 'Critical' },
+    { color: '#df8e1d', label: 'High' },
+    { color: '#04a5e5', label: 'Medium' },
+    { color: '#8b90a5', label: 'Low' },
+  ];
+
+  function buildOptions(selectId, items) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+    items.forEach((item, i) => {
+      const option = document.createElement('option');
+      option.value = item.label;
+      const dot = document.createElement('span');
+      dot.className = 'cs-dot';
+      dot.style.background = item.color;
+      option.appendChild(dot);
+      option.appendChild(document.createTextNode(item.label));
+      if (i === 0) option.selected = true;
+      select.appendChild(option);
+    });
+  }
+
+  buildOptions('cs-status-select', statusItems);
+  buildOptions('cs-priority-select', priorityItems);
 }
