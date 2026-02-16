@@ -50,6 +50,7 @@ const routes = {
   '/sibling-functions': () => import('./pages/sibling-functions.js'),
   // Patterns
   '/grid-auto-fit-fill': () => import('./pages/grid-auto-fit-fill.js'),
+  '/flex-scroll-sidebar': () => import('./pages/flex-scroll-sidebar.js'),
 };
 
 async function navigate() {

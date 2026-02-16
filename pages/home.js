@@ -1,6 +1,8 @@
 const features = [
   // Patterns — Grid
   { route: 'grid-auto-fit-fill', title: 'auto-fit vs auto-fill', year: 'Pattern', desc: 'Two grid keywords that behave differently when columns go empty.' },
+  // Patterns — Flexbox
+  { route: 'flex-scroll-sidebar', title: 'Scrollable Sidebar', year: 'Pattern', desc: 'Fixed header + scrollable list in a flex layout using min-height: 0.' },
   // 2020–2021
   { route: 'is-where', title: ':is() / :where()', year: '2021', desc: 'Simplify selectors with grouping pseudo-classes.' },
   { route: 'aspect-ratio', title: 'aspect-ratio', year: '2021', desc: 'Maintain proportional sizing without padding hacks.' },
