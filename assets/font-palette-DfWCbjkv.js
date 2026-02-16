@@ -1,9 +1,6 @@
 function e(){return`
     <style>
-      @font-face {
-        font-family: "Bungee Spice";
-        src: url("https://fonts.gstatic.com/s/bungeespice/v14/nwpTtK2nIhxE0q-IwgSpZBqCzyQ-.woff2") format("woff2");
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 
       @font-palette-values --cool {
         font-family: "Bungee Spice";
