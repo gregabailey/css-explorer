@@ -1,13 +1,13 @@
 const features = [
   // 2020–2021
   { route: 'is-where', title: ':is() / :where()', year: '2021', desc: 'Simplify selectors with grouping pseudo-classes.' },
-  { route: 'accent-color', title: 'accent-color', year: '2021', desc: 'Style native form controls with a single property.' },
   { route: 'aspect-ratio', title: 'aspect-ratio', year: '2021', desc: 'Maintain proportional sizing without padding hacks.' },
   { route: 'clamp-functions', title: 'clamp() / min() / max()', year: '2020', desc: 'Fluid typography and responsive sizing without media queries.' },
   { route: 'flexbox-gap', title: 'Flexbox gap', year: '2021', desc: 'Use gap in flex layouts — no more margin hacks.' },
   { route: 'logical-properties', title: 'Logical Properties', year: '2021', desc: 'Direction-agnostic layout with inline/block instead of left/right.' },
   { route: 'scroll-snap', title: 'Scroll Snap', year: '2021', desc: 'Native declarative snap points for scroll containers.' },
   // 2022
+  { route: 'accent-color', title: 'accent-color', year: '2022', desc: 'Style native form controls with a single property.' },
   { route: 'cascade-layers', title: 'Cascade Layers', year: '2022', desc: 'Explicit cascade priority with @layer — no more specificity wars.' },
   { route: 'color-spaces', title: 'Color Spaces', year: '2022', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
   { route: 'individual-transforms', title: 'Individual Transforms', year: '2022', desc: 'Animate translate, rotate, and scale independently.' },
@@ -17,7 +17,6 @@ const features = [
   { route: 'container-queries', title: 'Container Queries', year: '2023', desc: 'Style elements based on their container size, not the viewport.' },
   { route: 'nesting', title: 'CSS Nesting', year: '2023', desc: 'Native nesting of selectors — no preprocessor needed.' },
   { route: 'initial-letter', title: 'initial-letter', year: '2023', desc: 'Native drop caps without float hacks.' },
-  { route: 'scroll-driven-animations', title: 'Scroll Animations', year: '2023', desc: 'Tie CSS animations to scroll position natively.' },
   { route: 'subgrid', title: 'Subgrid', year: '2023', desc: 'Nested grids that inherit track sizing from parents.' },
   { route: 'trig-functions', title: 'Trig Functions', year: '2023', desc: 'Use sin(), cos(), tan() for circular layouts and waves.' },
   // 2024
@@ -27,12 +26,13 @@ const features = [
   { route: 'anchor-positioning', title: 'Anchor Positioning', year: '2024', desc: 'Position elements relative to anchors — tooltips without JS.' },
   { route: 'animate-to-auto', title: 'Animate to Auto', year: '2024', desc: 'Transition height to auto — no more max-height hacks.' },
   { route: 'details-styling', title: 'Details & Accordion', year: '2024', desc: 'Style and animate details with exclusive accordion behavior.' },
+  { route: 'field-sizing', title: 'field-sizing: content', year: '2024', desc: 'Auto-size form inputs to fit their content.' },
   { route: 'popover-api', title: 'Popover API', year: '2024', desc: 'Declarative popovers with top-layer and light dismiss.' },
+  { route: 'scroll-driven-animations', title: 'Scroll Animations', year: '2024', desc: 'Tie CSS animations to scroll position natively.' },
   { route: 'scrollbar-styling', title: 'Scrollbar Styling', year: '2024', desc: 'Standard scrollbar-color, scrollbar-width, and scrollbar-gutter.' },
   { route: 'text-wrap', title: 'text-wrap: balance', year: '2024', desc: 'Smarter line breaking for headings and paragraphs.' },
   // 2025
   { route: 'custom-select', title: 'Custom <select>', year: '2025', desc: 'Fully styleable native select with appearance: base-select.' },
-  { route: 'field-sizing', title: 'field-sizing: content', year: '2025', desc: 'Auto-size form inputs to fit their content.' },
   { route: 'view-transitions', title: 'View Transitions', year: '2025', desc: 'Native DOM-state transition animations.' },
 ];
 

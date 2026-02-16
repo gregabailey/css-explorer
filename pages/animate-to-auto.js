@@ -5,6 +5,7 @@ export function render() {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        interpolate-size: allow-keywords;
       }
 
       .ata-item {
@@ -178,7 +179,12 @@ export function render() {
     </div>
 
     <div class="code-block">
-      <pre>.panel {
+      <pre>/* Enable animating to/from intrinsic keywords */
+.container {
+  interpolate-size: allow-keywords;
+}
+
+.panel {
   height: 0;
   overflow: hidden;
   transition: height 400ms ease;
@@ -186,9 +192,7 @@ export function render() {
 
 .panel.open {
   height: auto;  /* This transition now works! */
-}
-
-/* That's it. No max-height hack needed. */</pre>
+}</pre>
     </div>
   `;
 }

@@ -121,7 +121,7 @@ export function render() {
         </div>
         <div class="pop-feature">
           <span class="pop-feature-check">✓</span>
-          <span><strong>Focus management</strong> — focus is trapped and restored automatically</span>
+          <span><strong>Focus restoration</strong> — focus returns to the trigger when closed</span>
         </div>
         <div class="pop-feature">
           <span class="pop-feature-check">✓</span>

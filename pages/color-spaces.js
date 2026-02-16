@@ -96,17 +96,17 @@ export function render() {
         border-radius: var(--radius);
         text-align: center;
         font-weight: 600;
+        background: light-dark(#f8f8f8, #1a1a2e);
+        color: light-dark(#1a1a2e, #e0e0e0);
+        border: 1px solid light-dark(#ddd, #444);
       }
 
       .cs-ld-light {
-        background: white;
-        color: light-dark(#1a1a2e, #e0e0e0);
-        border: 1px solid #ddd;
+        color-scheme: light;
       }
 
       .cs-ld-dark {
-        background: #1a1a2e;
-        color: light-dark(#1a1a2e, #e0e0e0);
+        color-scheme: dark;
       }
     </style>
 
@@ -163,6 +163,15 @@ export function render() {
       </div>
     </div>
 
+    <div class="demo-section">
+      <h2>light-dark()</h2>
+      <p class="info">Returns one of two values based on the element's <code>color-scheme</code>. Same CSS, different results.</p>
+      <div class="cs-ld-demo">
+        <div class="cs-ld-box cs-ld-light">color-scheme: light</div>
+        <div class="cs-ld-box cs-ld-dark">color-scheme: dark</div>
+      </div>
+    </div>
+
     <div class="code-block">
       <pre>/* OKLCH — perceptually uniform */
 .element {
@@ -174,7 +183,8 @@ export function render() {
   background: color-mix(in oklch, red, blue);
 }
 
-/* Automatic light/dark mode */
+/* light-dark() responds to color-scheme */
+:root { color-scheme: light dark; }
 .adaptive {
   color: light-dark(#333, #eee);
 }</pre>
