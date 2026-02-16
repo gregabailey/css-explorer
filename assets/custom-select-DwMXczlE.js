@@ -1,4 +1,4 @@
-function e(){return`
+function d(){return`
     <style>
       .cs-demo-grid {
         display: grid;
@@ -29,6 +29,7 @@ function e(){return`
         appearance: base-select;
         font-family: inherit;
         font-size: 0.9rem;
+        padding: 0.6rem 0.75rem;
         border: 1px solid var(--color-border);
         border-radius: var(--radius);
         background: var(--color-surface);
@@ -43,6 +44,10 @@ function e(){return`
 
       .cs-select::picker-icon {
         color: var(--color-text-muted);
+        transition: rotate 0.2s ease;
+      }
+      .cs-select:open::picker-icon {
+        rotate: 180deg;
       }
 
       .cs-select::picker(select) {
@@ -75,6 +80,7 @@ function e(){return`
         border-radius: 50%;
         vertical-align: middle;
         margin-right: 0.4rem;
+        flex-shrink: 0;
       }
 
       /* Fallback demo */
@@ -160,20 +166,14 @@ function e(){return`
           <h3>With Color Indicators</h3>
           <div class="cs-row">
             <label>Status</label>
-            <select class="cs-select">
-              <option><span class="cs-dot" style="background:#40a02b"></span>Active</option>
-              <option><span class="cs-dot" style="background:#df8e1d"></span>Pending</option>
-              <option><span class="cs-dot" style="background:#e64553"></span>Inactive</option>
-              <option><span class="cs-dot" style="background:#8b90a5"></span>Draft</option>
+            <select class="cs-select" id="cs-status-select">
+              <button><selectedcontent></selectedcontent></button>
             </select>
           </div>
           <div class="cs-row">
             <label>Priority</label>
-            <select class="cs-select">
-              <option><span class="cs-dot" style="background:#e64553"></span>Critical</option>
-              <option><span class="cs-dot" style="background:#df8e1d"></span>High</option>
-              <option><span class="cs-dot" style="background:#04a5e5"></span>Medium</option>
-              <option><span class="cs-dot" style="background:#8b90a5"></span>Low</option>
+            <select class="cs-select" id="cs-priority-select">
+              <button><selectedcontent></selectedcontent></button>
             </select>
           </div>
         </div>
@@ -231,9 +231,12 @@ option:checked {
 
 /* Rich HTML content inside options */
 &lt;select style="appearance: base-select"&gt;
+  &lt;button&gt;
+    &lt;selectedcontent&gt;&lt;/selectedcontent&gt;
+  &lt;/button&gt;
   &lt;option&gt;
     &lt;span class="dot green"&gt;&lt;/span&gt;Active
   &lt;/option&gt;
 &lt;/select&gt;</pre>
     </div>
-  `}export{e as render};
+  `}function p(){const c=[{color:"#40a02b",label:"Active"},{color:"#df8e1d",label:"Pending"},{color:"#e64553",label:"Inactive"},{color:"#8b90a5",label:"Draft"}],r=[{color:"#e64553",label:"Critical"},{color:"#df8e1d",label:"High"},{color:"#04a5e5",label:"Medium"},{color:"#8b90a5",label:"Low"}];function s(a,i){const l=document.getElementById(a);l&&i.forEach((o,n)=>{const e=document.createElement("option");e.value=o.label;const t=document.createElement("span");t.className="cs-dot",t.style.background=o.color,e.appendChild(t),e.appendChild(document.createTextNode(o.label)),n===0&&(e.selected=!0),l.appendChild(e)})}s("cs-status-select",c),s("cs-priority-select",r)}export{p as init,d as render};
