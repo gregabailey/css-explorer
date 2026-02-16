@@ -11,6 +11,10 @@ Interactive explorer for modern CSS features from 2020 to 2025. Each feature has
 - **2025** — Custom `<select>`, `reading-flow`, `shape()`, `sibling-index()` / `sibling-count()`, `text-box-trim`, View Transitions
 - **2025+** — `@function`, `if()`
 
+## Patterns
+
+- **Grid** — auto-fit vs auto-fill
+
 ## Getting started
 
 ```bash

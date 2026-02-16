@@ -48,6 +48,8 @@ const routes = {
   '/text-box-trim': () => import('./pages/text-box-trim.js'),
   '/reading-flow': () => import('./pages/reading-flow.js'),
   '/sibling-functions': () => import('./pages/sibling-functions.js'),
+  // Patterns
+  '/grid-auto-fit-fill': () => import('./pages/grid-auto-fit-fill.js'),
 };
 
 async function navigate() {

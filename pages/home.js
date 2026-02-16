@@ -1,4 +1,6 @@
 const features = [
+  // Patterns — Grid
+  { route: 'grid-auto-fit-fill', title: 'auto-fit vs auto-fill', year: 'Pattern', desc: 'Two grid keywords that behave differently when columns go empty.' },
   // 2020–2021
   { route: 'is-where', title: ':is() / :where()', year: '2021', desc: 'Simplify selectors with grouping pseudo-classes.' },
   { route: 'aspect-ratio', title: 'aspect-ratio', year: '2021', desc: 'Maintain proportional sizing without padding hacks.' },
@@ -63,7 +65,7 @@ export function render() {
   return `
     <div class="page-header">
       <h1>CSS Explorer</h1>
-      <p class="subtitle">Interactive demos of modern CSS features shipped between 2020 and 2025.</p>
+      <p class="subtitle">Interactive demos of CSS patterns and modern features shipped between 2020 and 2025. Patterns cover practical layout techniques, while features are organized by the year they reached broad browser support.</p>
     </div>
     <div class="home-grid">
       ${cards}
