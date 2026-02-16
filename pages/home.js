@@ -9,10 +9,10 @@ const features = [
   // 2022
   { route: 'accent-color', title: 'accent-color', year: '2022', desc: 'Style native form controls with a single property.' },
   { route: 'cascade-layers', title: 'Cascade Layers', year: '2022', desc: 'Explicit cascade priority with @layer — no more specificity wars.' },
-  { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
   { route: 'individual-transforms', title: 'Individual Transforms', year: '2022', desc: 'Animate translate, rotate, and scale independently.' },
   { route: 'overscroll-behavior', title: 'overscroll-behavior', year: '2022', desc: 'Control scroll chaining between nested containers.' },
   // 2023
+  { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
   { route: 'has-selector', title: ':has() Selector', year: '2023', desc: 'The "parent selector" — style elements based on their children.' },
   { route: 'container-queries', title: 'Container Queries', year: '2023', desc: 'Style elements based on their container size, not the viewport.' },
   { route: 'nesting', title: 'CSS Nesting', year: '2023', desc: 'Native nesting of selectors — no preprocessor needed.' },
