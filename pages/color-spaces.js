@@ -113,7 +113,7 @@ export function render() {
     <div class="page-header">
       <h1>Color Spaces & Functions</h1>
       <p class="subtitle"><code>oklch()</code>, <code>color-mix()</code>, and <code>light-dark()</code>.</p>
-      <span class="badge">Baseline 2022–2024</span>
+      <span class="badge">Baseline 2023–2024</span>
     </div>
 
     <p class="info">

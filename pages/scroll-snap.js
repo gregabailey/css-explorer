@@ -98,7 +98,7 @@ export function render() {
     <div class="page-header">
       <h1>Scroll Snap</h1>
       <p class="subtitle">Native, declarative snap points for scroll containers.</p>
-      <span class="badge">Baseline 2021</span>
+      <span class="badge">Baseline 2020</span>
     </div>
 
     <p class="info">

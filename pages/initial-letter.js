@@ -114,7 +114,7 @@ export function render() {
     <div class="page-header">
       <h1>initial-letter</h1>
       <p class="subtitle">Native drop caps without float hacks.</p>
-      <span class="badge">Baseline 2023</span>
+      <span class="badge">2023 (No Firefox)</span>
     </div>
 
     <p class="info">

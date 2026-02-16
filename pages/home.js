@@ -5,11 +5,11 @@ const features = [
   { route: 'clamp-functions', title: 'clamp() / min() / max()', year: '2020', desc: 'Fluid typography and responsive sizing without media queries.' },
   { route: 'flexbox-gap', title: 'Flexbox gap', year: '2021', desc: 'Use gap in flex layouts — no more margin hacks.' },
   { route: 'logical-properties', title: 'Logical Properties', year: '2021', desc: 'Direction-agnostic layout with inline/block instead of left/right.' },
-  { route: 'scroll-snap', title: 'Scroll Snap', year: '2021', desc: 'Native declarative snap points for scroll containers.' },
+  { route: 'scroll-snap', title: 'Scroll Snap', year: '2020', desc: 'Native declarative snap points for scroll containers.' },
   // 2022
   { route: 'accent-color', title: 'accent-color', year: '2022', desc: 'Style native form controls with a single property.' },
   { route: 'cascade-layers', title: 'Cascade Layers', year: '2022', desc: 'Explicit cascade priority with @layer — no more specificity wars.' },
-  { route: 'color-spaces', title: 'Color Spaces', year: '2022', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
+  { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
   { route: 'individual-transforms', title: 'Individual Transforms', year: '2022', desc: 'Animate translate, rotate, and scale independently.' },
   { route: 'overscroll-behavior', title: 'overscroll-behavior', year: '2022', desc: 'Control scroll chaining between nested containers.' },
   // 2023

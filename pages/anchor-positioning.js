@@ -117,7 +117,7 @@ export function render() {
     <div class="page-header">
       <h1>Anchor Positioning</h1>
       <p class="subtitle">Position elements relative to anchor elements — no JavaScript positioning.</p>
-      <span class="badge">2024 (Chrome 125+)</span>
+      <span class="badge">Baseline 2026</span>
     </div>
 
     <p class="info">

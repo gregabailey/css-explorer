@@ -186,17 +186,19 @@ export function render() {
     </div>
 
     <div class="code-block">
-      <pre>/* Place items in a circle */
+      <pre>/* Place items in a circle using CSS sin()/cos() */
 .item {
   --angle: calc(var(--i) * 1turn / var(--total));
   --radius: 120px;
-  top:  calc(50% + sin(var(--angle)) * var(--radius));
-  left: calc(50% + cos(var(--angle)) * var(--radius));
+  top:  calc(50% - 20px + sin(var(--angle)) * var(--radius) * -1);
+  left: calc(50% - 20px + cos(var(--angle)) * var(--radius));
 }
 
-/* Sine wave height */
-.bar {
-  height: calc(50% + sin(var(--i) * 0.3rad) * 40%);
+/* Clock: position hour markers around the face */
+.marker {
+  --angle: calc(var(--h) * 30deg);
+  left: calc(50% + cos(var(--angle) - 90deg) * 70px);
+  top:  calc(50% + sin(var(--angle) - 90deg) * 70px);
 }
 
 /* Also available: asin(), acos(), atan(), atan2() */</pre>

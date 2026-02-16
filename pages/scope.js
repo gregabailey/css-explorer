@@ -109,7 +109,7 @@ export function render() {
     <div class="page-header">
       <h1>@scope</h1>
       <p class="subtitle">Scoped styles with upper and lower boundaries.</p>
-      <span class="badge">Baseline 2024</span>
+      <span class="badge">Baseline 2025</span>
     </div>
 
     <p class="info">

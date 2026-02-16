@@ -123,7 +123,7 @@ export function render() {
     <div class="page-header">
       <h1>field-sizing: content</h1>
       <p class="subtitle">Auto-size form inputs to fit their content.</p>
-      <span class="badge">Baseline 2024</span>
+      <span class="badge">2024 (Limited support)</span>
     </div>
 
     <p class="info">
