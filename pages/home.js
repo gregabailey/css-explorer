@@ -12,8 +12,8 @@ const features = [
   { route: 'individual-transforms', title: 'Individual Transforms', year: '2022', desc: 'Animate translate, rotate, and scale independently.' },
   { route: 'overscroll-behavior', title: 'overscroll-behavior', year: '2022', desc: 'Control scroll chaining between nested containers.' },
   // 2023
-  { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
   { route: 'has-selector', title: ':has() Selector', year: '2023', desc: 'The "parent selector" — style elements based on their children.' },
+  { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
   { route: 'container-queries', title: 'Container Queries', year: '2023', desc: 'Style elements based on their container size, not the viewport.' },
   { route: 'nesting', title: 'CSS Nesting', year: '2023', desc: 'Native nesting of selectors — no preprocessor needed.' },
   { route: 'initial-letter', title: 'initial-letter', year: '2023', desc: 'Native drop caps without float hacks.' },
