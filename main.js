@@ -42,6 +42,12 @@ const routes = {
   '/user-valid': () => import('./pages/user-valid.js'),
   '/font-palette': () => import('./pages/font-palette.js'),
   '/math-functions': () => import('./pages/math-functions.js'),
+  '/css-function': () => import('./pages/css-function.js'),
+  '/css-if': () => import('./pages/css-if.js'),
+  '/shape-function': () => import('./pages/shape-function.js'),
+  '/text-box-trim': () => import('./pages/text-box-trim.js'),
+  '/reading-flow': () => import('./pages/reading-flow.js'),
+  '/sibling-functions': () => import('./pages/sibling-functions.js'),
 };
 
 async function navigate() {

@@ -42,6 +42,13 @@ const features = [
   // 2025
   { route: 'custom-select', title: 'Custom <select>', year: '2025', desc: 'Fully styleable native select with appearance: base-select.' },
   { route: 'view-transitions', title: 'View Transitions', year: '2025', desc: 'Native DOM-state transition animations.' },
+  { route: 'reading-flow', title: 'reading-flow', year: '2025', desc: 'Make keyboard focus follow visual layout order in flex and grid.' },
+  { route: 'shape-function', title: 'shape()', year: '2025', desc: 'Responsive clip paths with CSS units, curves, and arcs.' },
+  { route: 'sibling-functions', title: 'sibling-index() / sibling-count()', year: '2025', desc: 'Use element position and sibling count in CSS calculations.' },
+  { route: 'text-box-trim', title: 'text-box-trim', year: '2025', desc: 'Trim invisible space above and below text for precise alignment.' },
+  // 2025+ (bleeding edge)
+  { route: 'css-function', title: '@function', year: '2025+', desc: 'Define reusable custom functions in CSS with parameters and return types.' },
+  { route: 'css-if', title: 'if()', year: '2025+', desc: 'Inline conditional values — branch on media, style, or support queries.' },
 ];
 
 export function render() {
