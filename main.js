@@ -34,6 +34,9 @@ const routes = {
   '/details-styling': () => import('./pages/details-styling.js'),
   '/scrollbar-styling': () => import('./pages/scrollbar-styling.js'),
   '/custom-select': () => import('./pages/custom-select.js'),
+  '/viewport-units': () => import('./pages/viewport-units.js'),
+  '/focus-visible': () => import('./pages/focus-visible.js'),
+  '/nth-child-of': () => import('./pages/nth-child-of.js'),
 };
 
 async function navigate() {

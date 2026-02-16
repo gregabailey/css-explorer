@@ -11,6 +11,8 @@ const features = [
   { route: 'cascade-layers', title: 'Cascade Layers', year: '2022', desc: 'Explicit cascade priority with @layer — no more specificity wars.' },
   { route: 'individual-transforms', title: 'Individual Transforms', year: '2022', desc: 'Animate translate, rotate, and scale independently.' },
   { route: 'overscroll-behavior', title: 'overscroll-behavior', year: '2022', desc: 'Control scroll chaining between nested containers.' },
+  { route: 'focus-visible', title: ':focus-visible', year: '2022', desc: 'Show focus rings for keyboard users, hide them for mouse clicks.' },
+  { route: 'viewport-units', title: 'Dynamic Viewport Units', year: '2022', desc: 'dvh, svh, lvh — viewport units that handle mobile browser chrome.' },
   // 2023
   { route: 'has-selector', title: ':has() Selector', year: '2023', desc: 'The "parent selector" — style elements based on their children.' },
   { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
@@ -19,6 +21,7 @@ const features = [
   { route: 'initial-letter', title: 'initial-letter', year: '2023', desc: 'Native drop caps without float hacks.' },
   { route: 'subgrid', title: 'Subgrid', year: '2023', desc: 'Nested grids that inherit track sizing from parents.' },
   { route: 'trig-functions', title: 'Trig Functions', year: '2023', desc: 'Use sin(), cos(), tan() for circular layouts and waves.' },
+  { route: 'nth-child-of', title: ':nth-child(of S)', year: '2023', desc: 'Filter :nth-child() to match only elements of a given selector.' },
   // 2024
   { route: 'at-property', title: '@property', year: '2024', desc: 'Typed custom properties — animate gradients and more.' },
   { route: 'scope', title: '@scope', year: '2024', desc: 'Scoped styles with upper and lower boundaries.' },
