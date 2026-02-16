@@ -37,6 +37,11 @@ const routes = {
   '/viewport-units': () => import('./pages/viewport-units.js'),
   '/focus-visible': () => import('./pages/focus-visible.js'),
   '/nth-child-of': () => import('./pages/nth-child-of.js'),
+  '/content-visibility': () => import('./pages/content-visibility.js'),
+  '/linear-easing': () => import('./pages/linear-easing.js'),
+  '/user-valid': () => import('./pages/user-valid.js'),
+  '/font-palette': () => import('./pages/font-palette.js'),
+  '/math-functions': () => import('./pages/math-functions.js'),
 };
 
 async function navigate() {

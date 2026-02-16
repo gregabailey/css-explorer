@@ -6,6 +6,7 @@ const features = [
   { route: 'flexbox-gap', title: 'Flexbox gap', year: '2021', desc: 'Use gap in flex layouts — no more margin hacks.' },
   { route: 'logical-properties', title: 'Logical Properties', year: '2021', desc: 'Direction-agnostic layout with inline/block instead of left/right.' },
   { route: 'scroll-snap', title: 'Scroll Snap', year: '2020', desc: 'Native declarative snap points for scroll containers.' },
+  { route: 'content-visibility', title: 'content-visibility', year: '2020', desc: 'Skip rendering of off-screen content for faster page loads.' },
   // 2022
   { route: 'accent-color', title: 'accent-color', year: '2022', desc: 'Style native form controls with a single property.' },
   { route: 'cascade-layers', title: 'Cascade Layers', year: '2022', desc: 'Explicit cascade priority with @layer — no more specificity wars.' },
@@ -13,6 +14,7 @@ const features = [
   { route: 'overscroll-behavior', title: 'overscroll-behavior', year: '2022', desc: 'Control scroll chaining between nested containers.' },
   { route: 'focus-visible', title: ':focus-visible', year: '2022', desc: 'Show focus rings for keyboard users, hide them for mouse clicks.' },
   { route: 'viewport-units', title: 'Dynamic Viewport Units', year: '2022', desc: 'dvh, svh, lvh — viewport units that handle mobile browser chrome.' },
+  { route: 'font-palette', title: 'font-palette', year: '2022', desc: 'Recolor multi-color fonts with CSS — no image editing needed.' },
   // 2023
   { route: 'has-selector', title: ':has() Selector', year: '2023', desc: 'The "parent selector" — style elements based on their children.' },
   { route: 'color-spaces', title: 'Color Spaces', year: '2023', desc: 'oklch(), color-mix(), and light-dark() for modern color.' },
@@ -22,6 +24,8 @@ const features = [
   { route: 'subgrid', title: 'Subgrid', year: '2023', desc: 'Nested grids that inherit track sizing from parents.' },
   { route: 'trig-functions', title: 'Trig Functions', year: '2023', desc: 'Use sin(), cos(), tan() for circular layouts and waves.' },
   { route: 'nth-child-of', title: ':nth-child(of S)', year: '2023', desc: 'Filter :nth-child() to match only elements of a given selector.' },
+  { route: 'linear-easing', title: 'linear() Easing', year: '2023', desc: 'Define custom easing curves — bounce, spring, elastic, and more.' },
+  { route: 'math-functions', title: 'round() / mod() / rem()', year: '2023', desc: 'Stepped values, remainders, and modular arithmetic in CSS.' },
   // 2024
   { route: 'at-property', title: '@property', year: '2024', desc: 'Typed custom properties — animate gradients and more.' },
   { route: 'scope', title: '@scope', year: '2024', desc: 'Scoped styles with upper and lower boundaries.' },
@@ -34,6 +38,7 @@ const features = [
   { route: 'scroll-driven-animations', title: 'Scroll Animations', year: '2024', desc: 'Tie CSS animations to scroll position natively.' },
   { route: 'scrollbar-styling', title: 'Scrollbar Styling', year: '2024', desc: 'Standard scrollbar-color, scrollbar-width, and scrollbar-gutter.' },
   { route: 'text-wrap', title: 'text-wrap: balance', year: '2024', desc: 'Smarter line breaking for headings and paragraphs.' },
+  { route: 'user-valid', title: ':user-valid / :user-invalid', year: '2024', desc: 'Validate form fields only after the user has interacted.' },
   // 2025
   { route: 'custom-select', title: 'Custom <select>', year: '2025', desc: 'Fully styleable native select with appearance: base-select.' },
   { route: 'view-transitions', title: 'View Transitions', year: '2025', desc: 'Native DOM-state transition animations.' },
