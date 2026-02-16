@@ -1,4 +1,4 @@
-function m(){return`
+function h(){return`
     <style>
       .tf-radial-wrap {
         display: flex;
@@ -185,19 +185,21 @@ function m(){return`
     </div>
 
     <div class="code-block">
-      <pre>/* Place items in a circle */
+      <pre>/* Place items in a circle using CSS sin()/cos() */
 .item {
   --angle: calc(var(--i) * 1turn / var(--total));
   --radius: 120px;
-  top:  calc(50% + sin(var(--angle)) * var(--radius));
-  left: calc(50% + cos(var(--angle)) * var(--radius));
+  top:  calc(50% - 20px + sin(var(--angle)) * var(--radius) * -1);
+  left: calc(50% - 20px + cos(var(--angle)) * var(--radius));
 }
 
-/* Sine wave height */
-.bar {
-  height: calc(50% + sin(var(--i) * 0.3rad) * 40%);
+/* Clock: position hour markers around the face */
+.marker {
+  --angle: calc(var(--h) * 30deg);
+  left: calc(50% + cos(var(--angle) - 90deg) * 70px);
+  top:  calc(50% + sin(var(--angle) - 90deg) * 70px);
 }
 
 /* Also available: asin(), acos(), atan(), atan2() */</pre>
     </div>
-  `}function g(){const n=document.getElementById("tf-radial"),o=document.getElementById("tf-count"),f=document.getElementById("tf-count-label"),c=document.getElementById("tf-wave"),r=document.getElementById("tf-phase"),d=document.getElementById("tf-hour-hand"),l=document.getElementById("tf-min-hand");if(!n||!o||!c)return;function s(t){n.querySelectorAll(".tf-dot").forEach(e=>e.remove());for(let e=0;e<t;e++){const a=document.createElement("div");a.className="tf-dot",a.style.setProperty("--i",e),a.style.setProperty("--total",t),a.textContent=e+1,n.appendChild(a)}}o.addEventListener("input",()=>{f.textContent=o.value,s(Number(o.value))}),s(6);const u=40;for(let t=0;t<u;t++){const e=document.createElement("div");e.className="tf-wave-bar",c.appendChild(e)}function p(t){c.querySelectorAll(".tf-wave-bar").forEach((a,i)=>{const h=50+Math.sin(i*.3+t)*40;a.style.height=h+"%"})}if(p(0),r&&r.addEventListener("input",()=>{p(Number(r.value)/100)}),d&&l){let t=function(){const e=new Date,a=e.getHours()%12,i=e.getMinutes();d.style.setProperty("--deg",a*30+i*.5),l.style.setProperty("--deg",i*6)};t(),setInterval(t,1e3)}const v=document.getElementById("tf-clock");if(v)for(let t=1;t<=12;t++){const e=document.createElement("div");e.className="tf-clock-mark",e.style.setProperty("--h",t),e.textContent=t,v.appendChild(e)}}export{g as init,m as render};
+  `}function m(){const c=document.getElementById("tf-radial"),o=document.getElementById("tf-count"),f=document.getElementById("tf-count-label"),i=document.getElementById("tf-wave"),r=document.getElementById("tf-phase"),d=document.getElementById("tf-hour-hand"),l=document.getElementById("tf-min-hand");if(!c||!o||!i)return;function s(t){c.querySelectorAll(".tf-dot").forEach(e=>e.remove());for(let e=0;e<t;e++){const a=document.createElement("div");a.className="tf-dot",a.style.setProperty("--i",e),a.style.setProperty("--total",t),a.textContent=e+1,c.appendChild(a)}}o.addEventListener("input",()=>{f.textContent=o.value,s(Number(o.value))}),s(6);const u=40;for(let t=0;t<u;t++){const e=document.createElement("div");e.className="tf-wave-bar",i.appendChild(e)}function p(t){i.querySelectorAll(".tf-wave-bar").forEach((a,n)=>{const g=50+Math.sin(n*.3+t)*40;a.style.height=g+"%"})}if(p(0),r&&r.addEventListener("input",()=>{p(Number(r.value)/100)}),d&&l){let t=function(){const e=new Date,a=e.getHours()%12,n=e.getMinutes();d.style.setProperty("--deg",a*30+n*.5),l.style.setProperty("--deg",n*6)};t(),setInterval(t,1e3)}const v=document.getElementById("tf-clock");if(v)for(let t=1;t<=12;t++){const e=document.createElement("div");e.className="tf-clock-mark",e.style.setProperty("--h",t),e.textContent=t,v.appendChild(e)}}export{m as init,h as render};

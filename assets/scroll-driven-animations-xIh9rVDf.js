@@ -99,7 +99,7 @@ function e(){return`
     <div class="page-header">
       <h1>Scroll-Driven Animations</h1>
       <p class="subtitle">Tie CSS animations to scroll position — no JavaScript.</p>
-      <span class="badge">Baseline 2024</span>
+      <span class="badge">2024 (Limited support)</span>
     </div>
 
     <p class="info">

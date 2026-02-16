@@ -34,7 +34,7 @@ function e(){return`
         content: '−';
       }
       .ds-accordion details::details-content {
-        transition: height 0.3s ease, content-visibility 0.3s ease;
+        transition: height 0.3s ease;
         height: 0;
         overflow: hidden;
       }

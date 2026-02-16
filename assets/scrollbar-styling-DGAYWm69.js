@@ -117,7 +117,7 @@ function d(){return`
     <div class="page-header">
       <h1>Scrollbar Styling</h1>
       <p class="subtitle"><code>scrollbar-color</code>, <code>scrollbar-width</code>, and <code>scrollbar-gutter</code>.</p>
-      <span class="badge">Baseline 2024</span>
+      <span class="badge">Baseline 2024–2025</span>
     </div>
 
     <p class="info">
