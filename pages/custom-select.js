@@ -47,6 +47,7 @@ export function render() {
       }
 
       .cs-select::picker(select) {
+        appearance: base-select;
         background: var(--color-surface);
         border: 1px solid var(--color-border);
         border-radius: var(--radius);
@@ -205,8 +206,9 @@ export function render() {
     </div>
 
     <div class="code-block">
-      <pre>/* Opt into customizable select */
-select {
+      <pre>/* Opt into customizable select — BOTH are required */
+select,
+select::picker(select) {
   appearance: base-select;
 }
 
