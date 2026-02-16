@@ -15,6 +15,7 @@ Interactive explorer for modern CSS features from 2020 to 2025. Each feature has
 
 - **Grid** — auto-fit vs auto-fill
 - **Flexbox** — Scrollable Sidebar (min-height: 0 trick)
+- **Text** — Wrapping & Overflow
 
 ## Getting started
 

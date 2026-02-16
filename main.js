@@ -51,6 +51,7 @@ const routes = {
   // Patterns
   '/grid-auto-fit-fill': () => import('./pages/grid-auto-fit-fill.js'),
   '/flex-scroll-sidebar': () => import('./pages/flex-scroll-sidebar.js'),
+  '/text-wrapping': () => import('./pages/text-wrapping.js'),
 };
 
 async function navigate() {
