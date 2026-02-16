@@ -116,7 +116,7 @@ function c(){return`
     <div class="page-header">
       <h1>Anchor Positioning</h1>
       <p class="subtitle">Position elements relative to anchor elements — no JavaScript positioning.</p>
-      <span class="badge">Baseline 2026</span>
+      <span class="badge">2024 (Chrome 125+)</span>
     </div>
 
     <p class="info">

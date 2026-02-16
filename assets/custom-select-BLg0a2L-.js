@@ -1,4 +1,4 @@
-function e(){return`
+function o(){return`
     <style>
       .cs-demo-grid {
         display: grid;
@@ -67,19 +67,20 @@ function e(){return`
         color: white;
       }
 
-      /* Color-coded options */
+      /* Color-coded options using data attributes */
       .cs-color-select option {
         display: flex;
         align-items: center;
         gap: 0.5rem;
       }
-      .cs-color-dot {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
+      .cs-color-select option::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        vertical-align: middle;
-        margin-right: 0.5rem;
+        flex-shrink: 0;
+        background: var(--dot-color);
       }
 
       /* Fallback demo */
@@ -166,19 +167,19 @@ function e(){return`
           <div class="cs-row">
             <label>Status</label>
             <select class="cs-select cs-color-select">
-              <option><span class="cs-color-dot" style="background: #40a02b;"></span> Active</option>
-              <option><span class="cs-color-dot" style="background: #df8e1d;"></span> Pending</option>
-              <option><span class="cs-color-dot" style="background: #e64553;"></span> Inactive</option>
-              <option><span class="cs-color-dot" style="background: #8b90a5;"></span> Draft</option>
+              <option style="--dot-color: #40a02b;">Active</option>
+              <option style="--dot-color: #df8e1d;">Pending</option>
+              <option style="--dot-color: #e64553;">Inactive</option>
+              <option style="--dot-color: #8b90a5;">Draft</option>
             </select>
           </div>
           <div class="cs-row">
             <label>Priority</label>
             <select class="cs-select cs-color-select">
-              <option><span class="cs-color-dot" style="background: #e64553;"></span> Critical</option>
-              <option><span class="cs-color-dot" style="background: #df8e1d;"></span> High</option>
-              <option><span class="cs-color-dot" style="background: #04a5e5;"></span> Medium</option>
-              <option><span class="cs-color-dot" style="background: #8b90a5;"></span> Low</option>
+              <option style="--dot-color: #e64553;">Critical</option>
+              <option style="--dot-color: #df8e1d;">High</option>
+              <option style="--dot-color: #04a5e5;">Medium</option>
+              <option style="--dot-color: #8b90a5;">Low</option>
             </select>
           </div>
         </div>
@@ -236,6 +237,22 @@ option:checked {
 /* Style the dropdown arrow */
 select::picker-icon {
   color: gray;
-}</pre>
+}
+
+/* Color dots via ::before + custom properties */
+option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+option::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dot-color);
+}
+
+&lt;option style="--dot-color: green;"&gt;Active&lt;/option&gt;</pre>
     </div>
-  `}export{e as render};
+  `}export{o as render};

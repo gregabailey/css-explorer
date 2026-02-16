@@ -4,6 +4,7 @@ function e(){return`
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
+        interpolate-size: allow-keywords;
       }
       .ds-accordion details {
         background: var(--color-surface-2);
@@ -203,6 +204,9 @@ function e(){return`
 &lt;/details&gt;
 
 /* Animate open/close with ::details-content */
+.accordion {
+  interpolate-size: allow-keywords;
+}
 details::details-content {
   height: 0;
   overflow: hidden;

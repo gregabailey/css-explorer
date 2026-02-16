@@ -4,6 +4,7 @@ function i(){return`
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        interpolate-size: allow-keywords;
       }
 
       .ata-item {
@@ -177,7 +178,12 @@ function i(){return`
     </div>
 
     <div class="code-block">
-      <pre>.panel {
+      <pre>/* Enable animating to/from intrinsic keywords */
+.container {
+  interpolate-size: allow-keywords;
+}
+
+.panel {
   height: 0;
   overflow: hidden;
   transition: height 400ms ease;
@@ -185,8 +191,6 @@ function i(){return`
 
 .panel.open {
   height: auto;  /* This transition now works! */
-}
-
-/* That's it. No max-height hack needed. */</pre>
+}</pre>
     </div>
   `}function n(){const e=document.getElementById("ata-accordion");e&&e.addEventListener("click",a=>{const t=a.target.closest(".ata-trigger");if(!t)return;t.closest(".ata-item").classList.toggle("open")})}export{n as init,i as render};

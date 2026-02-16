@@ -95,17 +95,17 @@ function n(){return`
         border-radius: var(--radius);
         text-align: center;
         font-weight: 600;
+        background: light-dark(#f8f8f8, #1a1a2e);
+        color: light-dark(#1a1a2e, #e0e0e0);
+        border: 1px solid light-dark(#ddd, #444);
       }
 
       .cs-ld-light {
-        background: white;
-        color: light-dark(#1a1a2e, #e0e0e0);
-        border: 1px solid #ddd;
+        color-scheme: light;
       }
 
       .cs-ld-dark {
-        background: #1a1a2e;
-        color: light-dark(#1a1a2e, #e0e0e0);
+        color-scheme: dark;
       }
     </style>
 
@@ -162,6 +162,15 @@ function n(){return`
       </div>
     </div>
 
+    <div class="demo-section">
+      <h2>light-dark()</h2>
+      <p class="info">Returns one of two values based on the element's <code>color-scheme</code>. Same CSS, different results.</p>
+      <div class="cs-ld-demo">
+        <div class="cs-ld-box cs-ld-light">color-scheme: light</div>
+        <div class="cs-ld-box cs-ld-dark">color-scheme: dark</div>
+      </div>
+    </div>
+
     <div class="code-block">
       <pre>/* OKLCH — perceptually uniform */
 .element {
@@ -173,9 +182,10 @@ function n(){return`
   background: color-mix(in oklch, red, blue);
 }
 
-/* Automatic light/dark mode */
+/* light-dark() responds to color-scheme */
+:root { color-scheme: light dark; }
 .adaptive {
   color: light-dark(#333, #eee);
 }</pre>
     </div>
-  `}function p(){const l=document.getElementById("cs-l"),s=document.getElementById("cs-c"),o=document.getElementById("cs-h"),t=document.getElementById("cs-preview"),a=document.getElementById("cs-hue-palette");if(!l||!s||!o)return;function i(){const c=l.value/100,e=s.value/100,r=o.value,d=`oklch(${c} ${e} ${r})`;t.style.background=d,t.textContent=d,document.getElementById("cs-l-val").textContent=c.toFixed(2),document.getElementById("cs-c-val").textContent=e.toFixed(2),document.getElementById("cs-h-val").textContent=`${r}°`}if(l.addEventListener("input",i),s.addEventListener("input",i),o.addEventListener("input",i),a){let c="";for(let e=0;e<360;e+=24)c+=`<div class="cs-swatch" style="background:oklch(0.65 0.2 ${e})">${e}°</div>`;a.innerHTML=c}}export{p as init,n as render};
+  `}function m(){const c=document.getElementById("cs-l"),l=document.getElementById("cs-c"),o=document.getElementById("cs-h"),t=document.getElementById("cs-preview"),a=document.getElementById("cs-hue-palette");if(!c||!l||!o)return;function i(){const s=c.value/100,e=l.value/100,d=o.value,r=`oklch(${s} ${e} ${d})`;t.style.background=r,t.textContent=r,document.getElementById("cs-l-val").textContent=s.toFixed(2),document.getElementById("cs-c-val").textContent=e.toFixed(2),document.getElementById("cs-h-val").textContent=`${d}°`}if(c.addEventListener("input",i),l.addEventListener("input",i),o.addEventListener("input",i),a){let s="";for(let e=0;e<360;e+=24)s+=`<div class="cs-swatch" style="background:oklch(0.65 0.2 ${e})">${e}°</div>`;a.innerHTML=s}}export{m as init,n as render};
