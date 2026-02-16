@@ -18,6 +18,22 @@ const routes = {
   '/scroll-snap': () => import('./pages/scroll-snap.js'),
   '/clamp-functions': () => import('./pages/clamp-functions.js'),
   '/animate-to-auto': () => import('./pages/animate-to-auto.js'),
+  '/aspect-ratio': () => import('./pages/aspect-ratio.js'),
+  '/is-where': () => import('./pages/is-where.js'),
+  '/accent-color': () => import('./pages/accent-color.js'),
+  '/flexbox-gap': () => import('./pages/flexbox-gap.js'),
+  '/overscroll-behavior': () => import('./pages/overscroll-behavior.js'),
+  '/scope': () => import('./pages/scope.js'),
+  '/trig-functions': () => import('./pages/trig-functions.js'),
+  '/individual-transforms': () => import('./pages/individual-transforms.js'),
+  '/text-wrap': () => import('./pages/text-wrap.js'),
+  '/initial-letter': () => import('./pages/initial-letter.js'),
+  '/at-property': () => import('./pages/at-property.js'),
+  '/starting-style': () => import('./pages/starting-style.js'),
+  '/field-sizing': () => import('./pages/field-sizing.js'),
+  '/details-styling': () => import('./pages/details-styling.js'),
+  '/scrollbar-styling': () => import('./pages/scrollbar-styling.js'),
+  '/custom-select': () => import('./pages/custom-select.js'),
 };
 
 async function navigate() {
